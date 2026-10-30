@@ -1,0 +1,42 @@
+# 密钥与环境变量配置
+.env
+.env.*
+!.env.example
+
+# Python运行缓存
+__pycache__/
+*.py[cod]
+
+# 本地开发工具配置
+.idea/
+.vscode/
+
+# 虚拟环境
+.venv/
+venv/
+
+# 下载的模型及压缩包
+**/models/
+*.onnx
+*.task
+*.tar.bz2
+*.zip
+
+# 自动生成的向量索引缓存
+**/index_cache/
+*.index
+
+# 游客录音、生成的回答音频及会话记录
+*.wav
+*.mp3
+session_history.txt
+
+# 保留预先制作的欢迎语
+!test_tool/welcome.wav
+!test_tool/welcome.mp3
+
+# 日志
+*.log
+
+# 保留当前程序实际使用的欢迎语
+!test_tool/melo_output.wav
